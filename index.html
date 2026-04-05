@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bay Area Therapy Guide | Pediatric therapy navigation concierge</title>
+  <meta name="description" content="A Bay Area pediatric therapy navigation concierge helping families find speech, occupational, physical, and developmental therapy options with less stress and less guesswork." />
+  <meta property="og:title" content="Bay Area Therapy Guide" />
+  <meta property="og:description" content="Pediatric therapy navigation concierge for Bay Area families." />
+  <meta property="og:type" content="website" />
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #163047;
+      --muted: #5d7286;
+      --line: #d9e4ee;
+      --accent: #2e6da4;
+      --accent-soft: #e7f1fb;
+      --accent-dark: #1f5585;
+      --shadow: 0 16px 40px rgba(22, 48, 71, 0.08);
+      --radius: 20px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background: radial-gradient(circle at top, #eef6fd 0%, #f8fafc 38%, #f8fafc 100%);
+      line-height: 1.55;
+    }
+    a { color: inherit; }
+    .wrap { width: min(1100px, calc(100% - 32px)); margin: 0 auto; }
+    .hero { padding: 72px 0 44px; }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 8px; background: var(--accent-soft); color: var(--accent-dark);
+      border: 1px solid #cce0f3; border-radius: 999px; padding: 8px 14px; font-size: 14px; font-weight: 600; margin-bottom: 20px;
+    }
+    h1 { font-size: clamp(2.3rem, 6vw, 4.2rem); line-height: 1.05; letter-spacing: -0.03em; margin: 0 0 18px; max-width: 12ch; }
+    .subhead { font-size: clamp(1.07rem, 2.1vw, 1.3rem); color: var(--muted); max-width: 60ch; margin: 0 0 28px; }
+    .cta-row { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 22px; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; padding: 14px 18px; border-radius: 14px;
+      border: 1px solid transparent; text-decoration: none; font-weight: 700; transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn-primary { background: var(--accent); color: white; box-shadow: 0 10px 24px rgba(46, 109, 164, 0.24); }
+    .btn-primary:hover { background: var(--accent-dark); }
+    .btn-secondary { background: rgba(255,255,255,0.75); border-color: var(--line); color: var(--text); }
+    .hero-grid { display: grid; grid-template-columns: 1.25fr 0.9fr; gap: 28px; align-items: start; }
+    .card { background: var(--card); border: 1px solid rgba(217, 228, 238, 0.95); border-radius: var(--radius); box-shadow: var(--shadow); }
+    .trust-note { color: var(--muted); font-size: 0.98rem; max-width: 68ch; }
+    .summary-card { padding: 24px; }
+    .summary-card h2 { margin: 0 0 12px; font-size: 1.15rem; }
+    .summary-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
+    .summary-list li { padding: 14px; border-radius: 14px; background: #f8fbfe; border: 1px solid #e4edf5; }
+    .section { padding: 18px 0 28px; }
+    .section-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .info-card { padding: 24px; }
+    .info-card h3 { margin-top: 0; margin-bottom: 10px; font-size: 1.1rem; }
+    .info-card p { margin: 0; color: var(--muted); }
+    .how { padding: 4px 0 24px; }
+    .how-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .step { padding: 22px; }
+    .step-num {
+      width: 34px; height: 34px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center;
+      background: var(--accent-soft); color: var(--accent-dark); font-weight: 800; margin-bottom: 12px;
+    }
+    .cta-panel { margin: 26px 0 70px; padding: 30px; display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 20px; align-items: center; }
+    .cta-panel p { margin: 10px 0 0; color: var(--muted); max-width: 54ch; }
+    .contact-box { padding: 20px; border-radius: 16px; background: #f7fbff; border: 1px solid #dbe8f4; }
+    .contact-box strong { display: block; margin-bottom: 8px; font-size: 1rem; }
+    footer { padding: 0 0 36px; color: var(--muted); font-size: 0.95rem; }
+    .small { font-size: 0.93rem; color: var(--muted); }
+    @media (max-width: 900px) {
+      .hero-grid, .section-grid, .how-grid, .cta-panel { grid-template-columns: 1fr; }
+      .hero { padding-top: 52px; }
+      .cta-panel { padding: 24px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">Bay Area families • pediatric therapy navigation</div>
+          <h1>Finding the right therapy support shouldn’t feel like a second full-time job.</h1>
+          <p class="subhead">Bay Area Therapy Guide is a pediatric therapy navigation concierge for parents who need help finding the right next steps in speech, occupational, physical, feeding, or developmental support.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="mailto:hello@bayareatherapyguide.com?subject=I%27m%20interested%20in%20Bay%20Area%20Therapy%20Guide&body=Hi,%20I%27m%20interested%20in%20learning%20more.%0A%0AChild%20age:%20%0ACity:%20%0AWhat%20kind%20of%20support%20are%20you%20looking%20for:%20%0A">Join the early interest list</a>
+            <a class="btn btn-secondary" href="#how-it-works">See how it works</a>
+          </div>
+          <p class="trust-note">Built for parents in San Francisco, the Peninsula, South Bay, East Bay, and Marin who want a calmer, more organized way to understand their options. We are not a clinic, and we do not provide medical advice — we help families navigate the process with more clarity.</p>
+        </div>
+        <aside class="card summary-card">
+          <h2>What we help with</h2>
+          <ul class="summary-list">
+            <li><strong>Making sense of options</strong><br><span class="small">Private clinics, hospital systems, regional center pathways, school-based support, and developmental evaluations can be hard to compare.</span></li>
+            <li><strong>Reducing waitlist chaos</strong><br><span class="small">We help families identify realistic next steps instead of losing weeks calling providers one by one.</span></li>
+            <li><strong>Preparing for outreach</strong><br><span class="small">Know which questions to ask, what paperwork matters, and where to start based on your child’s needs.</span></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+    <section class="section">
+      <div class="wrap section-grid">
+        <div class="card info-card"><h3>The problem</h3><p>Parents often realize they need support and then run straight into long waitlists, scattered information, unclear terminology, and a dozen different intake processes.</p></div>
+        <div class="card info-card"><h3>What we do</h3><p>We act like a navigation concierge — helping families understand the landscape, prioritize options, and move forward with more confidence.</p></div>
+        <div class="card info-card"><h3>Why Bay Area-specific</h3><p>The provider landscape, geography, commute burden, and mix of school, private, and health-system options here are unusually complex. Local context matters.</p></div>
+      </div>
+    </section>
+    <section class="how" id="how-it-works">
+      <div class="wrap">
+        <h2>How the concierge works</h2>
+        <p class="subhead" style="max-width: 68ch; margin-top: 8px; margin-bottom: 20px;">This is a lightweight service concept designed to save families time early in the process.</p>
+        <div class="how-grid">
+          <div class="card step"><div class="step-num">1</div><h3>Tell us what’s going on</h3><p class="small">Share your child’s age, your location, what concerns you’re seeing, and what kind of help you’re looking for.</p></div>
+          <div class="card step"><div class="step-num">2</div><h3>We map the options</h3><p class="small">We organize likely paths to explore — for example speech therapy, OT, PT, feeding support, developmental evaluation, or regional resources.</p></div>
+          <div class="card step"><div class="step-num">3</div><h3>You get a clearer action plan</h3><p class="small">We help you understand where to start first, what tradeoffs matter, and what questions to ask when contacting providers.</p></div>
+          <div class="card step"><div class="step-num">4</div><h3>You move faster with less stress</h3><p class="small">The goal is not more information — it’s less thrash, fewer dead ends, and a more manageable path forward.</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="wrap">
+      <div class="card cta-panel">
+        <div>
+          <h2>Interested in trying it or talking with us?</h2>
+          <p>We’re gauging demand with a small group of Bay Area families. If this would have been useful for you, send a note and we’ll follow up with details as the service takes shape.</p>
+        </div>
+        <div class="contact-box">
+          <strong>Simple next step</strong>
+          <p style="margin-top:0; color: var(--muted);">Email us with your city and the kind of support you’re looking for.</p>
+          <p style="margin-bottom:0;"><a class="btn btn-primary" style="width:100%; margin-top:12px;" href="mailto:hello@bayareatherapyguide.com?subject=Interested%20in%20Bay%20Area%20Therapy%20Guide">Email hello@bayareatherapyguide.com</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap">
+      <p>Bay Area Therapy Guide is an early-stage service concept for pediatric therapy navigation. It is not a medical provider, therapy clinic, or emergency service.</p>
+    </div>
+  </footer>
+</body>
+</html>
